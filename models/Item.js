@@ -1,7 +1,7 @@
 const {sequelize} = require('../db');
 const { Sequelize } = require('sequelize');
 
-let Item = new sequelize.define('item', {
+let Item = sequelize.define('item', {
  name: Sequelize.STRING,
  image: Sequelize.STRING,
  price: Sequelize.INTEGER,
